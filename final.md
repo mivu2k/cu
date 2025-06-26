@@ -570,9 +570,7 @@ ret
 ```
 
 ## lab 13-5
-
-''' asm
-
+```asm
 
 [org 0x0100]
 mov ax,5
@@ -589,4 +587,4 @@ add cx,bx
 mov ax,cx
 ret
 
-'''
+```
