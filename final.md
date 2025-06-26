@@ -568,3 +568,25 @@ my_func:
     pop ax
 ret
 ```
+
+## lab 13-5
+
+''' asm
+
+
+[org 0x0100]
+mov ax,5
+push ax
+mov ax,7
+push ax
+call addition 
+mov ax,0x4c00
+int 0x21
+addition:
+pop bx
+pop cx
+add cx,bx
+mov ax,cx
+ret
+
+'''
